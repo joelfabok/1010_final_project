@@ -26,7 +26,7 @@ const Create = () => {
             alert(`Oops! Error: ${payload.message} for fields: ${payload.invalid.join(",")}`)
         } else {
           console.log(`Congrats! Submission submitted with id: ${payload.id}`)
-          alert(`Congrats! Submission submitted with id: ${payload.id}`)
+          alert(`Congrats! Account was created`)
         }
     }
 

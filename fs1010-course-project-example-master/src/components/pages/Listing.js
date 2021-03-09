@@ -23,6 +23,7 @@ const Listings = () => {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
+                
             })
             const data = await response.json()
             setListing(data)
@@ -36,7 +37,7 @@ const Listings = () => {
    
     $(document).ready(function(){
         $("deleteButton").click(function(){
-          $("entry").remove("tr");
+          $("").remove("tr");
         });
       });
     
@@ -52,7 +53,7 @@ const Listings = () => {
                     <th>Name</th>
                     <th>Phone Number</th>
                     <th>Email</th>
-                    <th>Delete</th>
+                    
                     </tr>
                 </thead>
                 <tbody>
@@ -60,7 +61,7 @@ const Listings = () => {
                         <tr><td colSpan="4" className="text-center"><i>No listings found</i></td></tr>
                     }
                     {listing.length > 0 &&
-                        listing.map(entry => <tr><td>{entry.id}</td><td>{entry.name}</td><td>{entry.phoneNumber}</td><td>{entry.email}</td><td>{remove}</td></tr>)
+                        listing.map(entry => <tr><td>{entry.id}</td><td>{entry.name}</td><td>{entry.phoneNumber}</td><td>{entry.email}</td></tr>)
                     }
                 </tbody>
 
