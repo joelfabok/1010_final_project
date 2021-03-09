@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+    margin: 0%;
+    margin-top: -25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+
+  /****************************************/
+  /************* Home Nav Bar  ************/
+  /****************************************/
+
+.home a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #FF652F;
+
+}
+
+.home a:hover {
+  color: white;
+}
+
+  
+  /*********************************/
+  /************* Title  ************/
+  /*********************************/
+
+
+  #heading {
+    position: Absolute;
+    margin-left: 43%;
+    padding-top: 20%;
+    color: white;
+    font-size: 25px;
+    opacity: 1;
+    height: 100%;
+  }
+
+  .name {
+    color: white;
+    animation: fading 10s;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+  }
+  
+
+  #logo{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: opacity 2s ease 2s, height 1s ease 4s;
+}
+
+.preload #logo {
+    opacity: 1;
+    height: 100%;
+}
+
+.preload .logo{
+   opacity: 0;
+    height: 100%;
+}
+
+h1, #contactSpan, #about, #infoSpan{
+  transition: opacity 2s ease 4s, height 0.1s ease 1s;
+    
+}
+
+
+.body{
+  padding-top: 600px;
+  color: white;
+  position: relative;
+}
+
+
+
+
+
+/*********************************/
+/********** Contact Nav *********/
+/*********************************/
+
+.contact {
+  transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+      text-align: center;
+      display: inline-block;
+      position: fixed;
+      top: 50%;
+      right: 0;
+      font-size: 16px;
+      color: #FF652F;
+}
+
+.contact:hover {
+color: white;
+}
+
+/*********************************/
+/********** About Nav *********/
+/*********************************/
+
+#about{
+  transform: rotate(-90deg); /* Equal to rotateZ(45deg) */
+  text-align: center;
+  display:inline-block; 
+  position: fixed;
+  left: 0;
+  top: 50%;
+  font-size: 16px;
+  
+}
+
+#about:hover {
+  color: white;
+}
+
+/*********************************/
+/********** Portfolio Nav *********/
+/*********************************/
+.portfolio {
+  bottom: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  font-size: 16px;
+}
+
+.main:hover {
+color: white;
+}
+
+
+

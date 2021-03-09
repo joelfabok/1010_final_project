@@ -1,0 +1,162 @@
+body {
+  background-color: #123;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+  /********************************************/
+  /************** About Us Content ************/
+  /********************************************/
+
+  .about {
+    background-color: #2C2A34;
+    width: 90%;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.5%;
+    border-radius: 7px;
+    
+  }
+
+  #aboutText {
+    float: right;
+    max-width: 40%;
+    margin-right: 50px;
+    color: white;
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  #aboutText h2 {
+    color: #FF652F;
+  }
+
+
+
+  /*******************************/
+  /************* Bars ************/
+  /*******************************/
+
+
+  .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 400px;
+    margin: auto;
+    max-width: auto;
+  }
+
+
+  .html {
+    animation: html 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    color: #001;
+    font-weight: bold;
+  }
+
+  .css {
+    animation: css 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    color: #001;
+    font-weight: bold;
+  }
+
+   .js {
+    animation: js 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    color: #001;
+    font-weight: bold;
+  }
+
+  .jQuery {
+    animation: jQuery 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    color: #001;
+    font-weight: bold;
+  }
+
+  @keyframes html {
+    0% { width: 0; }
+    100% { width: 90%; }
+  }
+
+  @keyframes css {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+
+  @keyframes js {
+    0% { width: 0; }
+    100% { width: 30%; }
+  }
+
+  @keyframes jQuery {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+
+
+
+  .skillBars{
+    position: absolute;
+    width: 60%;
+    top: 80px;
+    color: white;
+    margin-left: -100px;
+    text-align: center;
+  }
+
+  .skillBars p{
+    font-size: 15px;
+    color: white;
+  }
+
+  .skillBars h2{
+    color: #FF652F;
+  }
+
+
+  /********************************************************/
+  /************* Resume At The Bottom OF Page  ************/
+  /********************************************************/
+
+  .resume {
+    padding-top: 320px;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+  }
+
+  .resumeText {
+    margin-top: -15px;
+  }
+
+  .resume h2 {
+    text-align: center;
+    color: #FF652F;
+    padding-bottom: 9px;
+  }
+
+  .resumeinfo {
+    font-size: 13px;
+    margin-top: -10px;
+    color: white;
+    text-align: center;
+  }
