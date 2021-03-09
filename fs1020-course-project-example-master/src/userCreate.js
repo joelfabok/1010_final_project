@@ -3,6 +3,9 @@ import jwt from 'express-jwt'
 import * as sign from './create'
 import {v4 as uuidv4} from 'uuid'
 
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
+
 const router = express.Router()
 
 const signUp = (req, res, next) => {
@@ -24,16 +27,23 @@ const signUp = (req, res, next) => {
 }
 
 router.post('/', signUp, async (req, res) => {
-    const body = req.body
-    const newEntry = {id: uuidv4(), ...body}
+    
+    const newEntry = {id: uuidv4(),
+    name: req.body.name,
+    userName: req.body.userName,
+    password: req.body.password,
+    }
+
+    bcrypt.hash(newEntry.password, saltRounds, function (err, hash) {
+        // Store hash in your password DB.
+        newEntry.password = hash;
     console.log(newEntry, req.body)
-    await sign.add(newEntry)
+    sign.add(newEntry)
     return res.send(newEntry)
+    });
 })
 
-router.delete('/', function (req, res) {
-    res.send('Got a DELETE request at /user')
-  })
+
 
 router.use(jwt({secret: process.env.JWT_SECRET}))
 

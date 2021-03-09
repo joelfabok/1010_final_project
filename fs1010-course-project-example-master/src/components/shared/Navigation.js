@@ -11,7 +11,7 @@ const Navigation = () => {
     return (
         <Navbar expand="md" fixed="top" className="navBar">
             <Container>
-            <NavbarBrand href=""><img src={logo} /></NavbarBrand>
+            <NavbarBrand tag={RouteLink} to="/"><img src={logo} /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="ml-auto" navbar>
