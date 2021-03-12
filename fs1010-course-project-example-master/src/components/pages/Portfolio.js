@@ -55,7 +55,7 @@ const Portfolio = () => {
           </div>
         
           <div className="col-lg-4">
-            <a href="http://vienetwork.net/">
+            <a href="https://americanaviationrepairs.com/">
               <div className="hover hover-3 text-white rounded"><img src={repair} alt="" />
                 <div className="hover-overlay" />
                 <div className="hover-3-content px-5 py-4">
@@ -66,7 +66,7 @@ const Portfolio = () => {
             </a>
           </div>
           <div className="col-lg-4">
-            <a href="http://vienetwork.net/">
+            <a href="https://americanaviationaircraftsales.com/">
               <div className="hover hover-3 text-white rounded"><img src={sales} alt="" />
                 <div className="hover-overlay" />
                 <div className="hover-3-content px-5 py-4">
